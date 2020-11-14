@@ -1,5 +1,5 @@
 class Project < ApplicationRecord
-    attribute :locale, :string, default: 'en'
+
     validates :name, :description, presence: true
     enum status: %w[propuesta en_progreso terminada]
     
